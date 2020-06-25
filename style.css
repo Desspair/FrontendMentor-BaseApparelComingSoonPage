@@ -8,10 +8,9 @@
   /* Neutral */
   --Dark-Grayish-Red: hsl(0, 6%, 24%);
 
-  /* Gradients 
-  - Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
-  - Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%)
-    */
+  /* Gradients */
+  --Linear1: 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%);
+  --Linear2: 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%);
 }
 
 * {
@@ -22,9 +21,9 @@
 
 body {
   font-family: "Josefin Sans", sans-serif;
-  max-width: 375px;
+  min-width: 375px;
   font-size: 16px;
-  border: 1px solid red;
+  background-color: #faf4f4;
 }
 
 .logo {
@@ -59,34 +58,42 @@ body {
 
 .text {
   color: var(--Desaturated-Red);
-  margin: 10px;
+  margin: 15px;
   text-align: center;
   line-height: 22px;
 }
 
 .container-email {
-  border: 1px solid var(--Dark-Grayish-Red);
-  border-radius: 20px;
+  border: 1px solid var(--Desaturated-Red);
+  border-radius: 30px;
   width: 80%;
   height: 50px;
   margin: 30px auto;
   display: flex;
   justify-content: center;
+  justify-content: center;
 }
 
 .email-text {
-  border-radius: 20px;
+  border-radius: 30px;
   width: 80%;
-  padding: 10px;
   color: var(--Desaturated-Red);
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
+  margin-left: 20px;
 }
 
 .container-icon {
-  border-radius: 20px;
-  width: 20%;
-  background-color: var(--Soft-Red);
+  border-radius: 30px;
+  width: 25%;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  display: flex;
+  justify-content: center;
+  justify-items: center;
 }
 
 .icon {
-  padding: 10px;
+  padding: 13px;
 }
