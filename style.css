@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+
+:root {
+  /* Primary */
+  --Desaturated-Red: hsl(0, 36%, 70%);
+  --Soft-Red: hsl(0, 93%, 68%);
+
+  /* Neutral */
+  --Dark-Grayish-Red: hsl(0, 6%, 24%);
+
+  /* Gradients 
+  - Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
+  - Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%)
+    */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  max-width: 375px;
+  font-size: 16px;
+  border: 1px solid red;
+}
+
+.logo {
+  padding: 10px;
+  margin: 20px;
+}
+
+.logo img {
+  width: 110px;
+}
+
+.hero {
+  height: 250px;
+  background: url("images/hero-mobile.jpg") no-repeat;
+  background-size: cover;
+  margin-bottom: 60px;
+}
+
+.title {
+  color: var(--Desaturated-Red);
+  text-align: center;
+  letter-spacing: 1rem;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.subtitle {
+  color: hsl(0, 6%, 24%);
+  font-weight: bold;
+}
+
+.text {
+  color: var(--Desaturated-Red);
+  margin: 10px;
+  text-align: center;
+  line-height: 22px;
+}
+
+.container-email {
+  border: 1px solid var(--Dark-Grayish-Red);
+  border-radius: 20px;
+  width: 80%;
+  height: 50px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.email-text {
+  border-radius: 20px;
+  width: 80%;
+  padding: 10px;
+  color: var(--Desaturated-Red);
+}
+
+.container-icon {
+  border-radius: 20px;
+  width: 20%;
+  background-color: var(--Soft-Red);
+}
+
+.icon {
+  padding: 10px;
+}
